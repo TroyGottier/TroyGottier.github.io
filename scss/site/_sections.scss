@@ -1,0 +1,59 @@
+@for $i from 1 through 4 {
+	.content_block--#{$i} {
+		.content_block__bg {
+			background-image: url(/images/section-#{$i}.jpg);
+		}
+
+	}
+
+}
+.content_block {
+	position: relative;
+	padding: 80px 5%;
+	background: $black;
+	border-bottom: 10px solid blue;
+	&__bg {
+		opacity: .8;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-position: center 100px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	&__content {
+		border-radius: 10px;
+		padding: 20px;
+		position: relative;
+		z-index: 10;
+		background: rgba($white, .8);
+		box-shadow: 2px 2px 5px $black;
+	}
+	&--1 {
+		text-align: center;
+	}
+	.iconset {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		&__icon {
+			width: 20%;
+			padding: 0 2.5% 20px;
+
+			&:hover {
+				img {
+					transform: rotateY(360deg);
+				}
+			}
+			img {
+				transition: 800ms;
+				width: 100%;
+				filter: drop-shadow(0 0 5px rgba($black, .6));
+			}
+		}
+	}
+}
