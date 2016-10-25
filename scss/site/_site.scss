@@ -3,7 +3,10 @@ html {
 	padding-top: 100px;
 }
 h2 {
+	@include secondary-font(2em);
 	text-align: center;
+	margin-bottom: 1em;
+	color: $primary-color;
 }
 img {
 	max-width: 100%;

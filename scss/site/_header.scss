@@ -42,12 +42,13 @@ header {
 			position: absolute;
 			top: 50%;
 			left: 0;
-			transform: translateY(-50%);
-			@include primary-font(8vw,bold);
+			transform: translateY(-30%);
+			@include secondary-font(7vw);
 			width: 100%;
 			text-shadow: 0 0 20px white;
 			padding-left: 50px;
 			box-sizing: border-box;
+			color: $primary-color;
 		}
 
 	}

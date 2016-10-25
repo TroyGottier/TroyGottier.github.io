@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i|Righteous");
 h1,
 h2 {
   margin: 0;
@@ -354,12 +354,30 @@ td,
 th {
   padding: 0; }
 
+.dl-resume {
+  background: #000087;
+  color: #fff;
+  font-family: 'Righteous', cursive;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  transition: 300ms; }
+  .dl-resume:hover {
+    background: #000054; }
+
 html {
   font-size: 100%;
   padding-top: 100px; }
 
 h2 {
-  text-align: center; }
+  font-family: 'Righteous', cursive;
+  font-size: 2em;
+  line-height: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #000087; }
 
 img {
   max-width: 100%; }
@@ -405,16 +423,15 @@ header {
       position: absolute;
       top: 50%;
       left: 0;
-      transform: translateY(-50%);
-      font-family: 'Open Sans', sans-serif;
-      font-size: 8vw;
-      font-weight: bold;
-      font-style: normal;
+      transform: translateY(-30%);
+      font-family: 'Righteous', cursive;
+      font-size: 7vw;
       line-height: 1em;
       width: 100%;
       text-shadow: 0 0 20px white;
       padding-left: 50px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      color: #000087; }
 
 .content_block--1 .content_block__bg {
   background-image: url(/images/section-1.jpg); }
@@ -431,8 +448,8 @@ header {
 .content_block {
   position: relative;
   padding: 80px 5%;
-  background: #000;
-  border-bottom: 10px solid blue; }
+  background: #030303;
+  border-bottom: 1px solid #030303; }
   .content_block__bg {
     opacity: .8;
     position: absolute;
@@ -450,7 +467,7 @@ header {
     position: relative;
     z-index: 10;
     background: rgba(255, 255, 255, 0.8);
-    box-shadow: 2px 2px 5px #000; }
+    box-shadow: 2px 2px 5px #030303; }
   .content_block--1 {
     text-align: center; }
   .content_block .iconset {
@@ -466,7 +483,7 @@ header {
       .content_block .iconset__icon img {
         transition: 800ms;
         width: 100%;
-        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6)); }
+        filter: drop-shadow(0 0 5px rgba(3, 3, 3, 0.6)); }
 
 footer .animation {
   overflow: hidden;

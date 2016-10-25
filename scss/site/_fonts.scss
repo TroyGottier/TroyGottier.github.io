@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i|Righteous');
 
-@mixin primary-font($size:1rem,$weight:normal,$style:normal,$line-height:1em) {
-	font-family: 'Open Sans', sans-serif;
+@mixin primary-font($size:1rem,$weight:400,$style:normal,$line-height:1em) {
+	font-family: 'Raleway', sans-serif;
 	font-size: $size;
 	font-weight: $weight;
 	font-style: $style;
+	line-height: $line-height;
+}
+@mixin secondary-font($size:1rem,$line-height:1em) {
+	font-family: 'Righteous', cursive;
+	font-size: $size;
 	line-height: $line-height;
 }
