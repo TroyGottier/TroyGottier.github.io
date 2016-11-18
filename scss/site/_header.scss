@@ -43,12 +43,15 @@ header {
 			top: 50%;
 			left: 0;
 			transform: translateY(-30%);
-			@include secondary-font(7vw);
+			@include secondary-font(3em);
 			width: 100%;
 			text-shadow: 0 0 20px white;
 			padding-left: 50px;
 			box-sizing: border-box;
 			color: $primary-color;
+			@media only screen and (max-width : 900px) {
+				font-size: 6vw;
+			}
 		}
 
 	}

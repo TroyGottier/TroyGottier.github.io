@@ -1,12 +1,39 @@
 .dl-resume {
-	background: $primary-color;
-	color: $white;
-	@include secondary-font(1em);
 	text-align: center;
+	background-color: $primary-color;
+	@include secondary-font(1em);
+	text-transform: uppercase;
+	color: $white;
+	position: relative;
 	display: block;
-	padding: 10px 0;
-	transition: 300ms;
-	&:hover {
-		background: $secondary-color;
+	padding: 10px 20px;
+	padding-right: 50px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 0px $secondary-color, 0px 5px 0px 0px $secondary-color, 0px 10px 5px rgba($secondary-color, .3);
+	&:active {
+		top: 3px;
+		background-image: linear-gradient(bottom, rgb(62,51,46) 100%, rgb(101,86,78) 0%);
+		box-shadow: inset 0px 1px 0px $secondary-color, 0px 2px 0px 0px $secondary-color, 0px 5px 3px rgba($secondary-color, .3);
+	}
+	&::before {
+		background-color: $secondary-color;
+		background-image: url(../images/right_arrow.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		content: "";
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		margin-top: -9px;
+		border-radius: 50%;
+		box-shadow: inset 0px 1px 0px #19120f, 0px 1px 0px #827066;
+	}
+	&:active::before {
+		top: 50%;
+		margin-top: -12px;
+		box-shadow: inset 0px 1px 0px $secondary-color, 0px 3px 0px #19120f, 0px 6px 3px #382e29;
 	}
 }

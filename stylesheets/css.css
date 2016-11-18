@@ -355,17 +355,42 @@ th {
   padding: 0; }
 
 .dl-resume {
-  background: #000087;
-  color: #fff;
+  text-align: center;
+  background-color: #0038AB;
   font-family: 'Righteous', cursive;
   font-size: 1em;
   line-height: 1em;
-  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
   display: block;
-  padding: 10px 0;
-  transition: 300ms; }
-  .dl-resume:hover {
-    background: #000054; }
+  padding: 10px 20px;
+  padding-right: 50px;
+  background-image: linear-gradient(bottom, #3e332e 0%, #65564e 100%);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #0B92C2, 0px 5px 0px 0px #0B92C2, 0px 10px 5px rgba(11, 146, 194, 0.3); }
+  .dl-resume:active {
+    top: 3px;
+    background-image: linear-gradient(bottom, #3e332e 100%, #65564e 0%);
+    box-shadow: inset 0px 1px 0px #0B92C2, 0px 2px 0px 0px #0B92C2, 0px 5px 3px rgba(11, 146, 194, 0.3); }
+  .dl-resume::before {
+    background-color: #0B92C2;
+    background-image: url(../images/right_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 50%;
+    box-shadow: inset 0px 1px 0px #19120f, 0px 1px 0px #827066; }
+  .dl-resume:active::before {
+    top: 50%;
+    margin-top: -12px;
+    box-shadow: inset 0px 1px 0px #0B92C2, 0px 3px 0px #19120f, 0px 6px 3px #382e29; }
 
 html {
   font-size: 100%;
@@ -377,7 +402,7 @@ h2 {
   line-height: 1em;
   text-align: center;
   margin-bottom: 1em;
-  color: #000087; }
+  color: #0038AB; }
 
 img {
   max-width: 100%; }
@@ -425,13 +450,16 @@ header {
       left: 0;
       transform: translateY(-30%);
       font-family: 'Righteous', cursive;
-      font-size: 7vw;
+      font-size: 3em;
       line-height: 1em;
       width: 100%;
       text-shadow: 0 0 20px white;
       padding-left: 50px;
       box-sizing: border-box;
-      color: #000087; }
+      color: #0038AB; }
+      @media only screen and (max-width: 900px) {
+        header .logo h1 {
+          font-size: 6vw; } }
 
 .content_block--1 .content_block__bg {
   background-image: url(/images/section-1.jpg); }

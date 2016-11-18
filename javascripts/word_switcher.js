@@ -32,5 +32,4 @@ $switchContainer.each(function() {
 			$(this).text(data[count % data.length]).fadeIn(400);
 		});
 	}, 2000);
-	console.log(data);
 });
