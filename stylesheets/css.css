@@ -783,7 +783,7 @@ footer .animation {
     footer .animation .plane__window-2 {
       right: 70%; }
     footer .animation .plane__wing-1 {
-      background: #E25C45;
+      background: #FF6600;
       width: 15px;
       height: 20px;
       top: 84%;
@@ -802,7 +802,7 @@ footer .animation {
       bottom: 100%;
       height: 16px;
       width: 14px;
-      background: #E25C45;
+      background: #FF6600;
       position: absolute;
       right: 35px;
       transform: scaleY(-1); }
@@ -816,7 +816,7 @@ footer .animation {
         transform: rotate(14deg);
         top: 3px; }
     footer .animation .plane__tail {
-      background: #F6D160;
+      background: #4B1388;
       width: 16px;
       height: 23px;
       bottom: 100%;
