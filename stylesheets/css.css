@@ -415,7 +415,12 @@ header {
   height: 100px;
   z-index: 200;
   background: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  background-image: url(/images/map.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
   header .ribbon {
     text-transform: uppercase;
     z-index: 10;
@@ -445,6 +450,7 @@ header {
       max-width: 50%;
       opacity: .8; }
     header .logo h1 {
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
       position: absolute;
       top: 50%;
       left: 0;
@@ -453,10 +459,9 @@ header {
       font-size: 3em;
       line-height: 1em;
       width: 100%;
-      text-shadow: 0 0 20px white;
       padding-left: 50px;
       box-sizing: border-box;
-      color: #0038AB; }
+      color: #fff; }
       @media only screen and (max-width: 900px) {
         header .logo h1 {
           font-size: 6vw; } }

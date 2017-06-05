@@ -7,6 +7,11 @@ header {
 	z-index: 200;
 	background: $white;
 	overflow: hidden;
+	background-image: url(/images/map.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 	.ribbon {
 		text-transform: uppercase;
 		z-index: 10;
@@ -39,16 +44,16 @@ header {
 			opacity: .8;
 		}
 		h1 {
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 			position: absolute;
 			top: 50%;
 			left: 0;
 			transform: translateY(-30%);
 			@include secondary-font(3em);
 			width: 100%;
-			text-shadow: 0 0 20px white;
 			padding-left: 50px;
 			box-sizing: border-box;
-			color: $primary-color;
+			color: $white;
 			@media only screen and (max-width : 900px) {
 				font-size: 6vw;
 			}
